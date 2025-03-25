@@ -1,4 +1,4 @@
-'''#program 1
+#program 1
 
 for i in range(1500,2700):
    if i%7==0 and i%5==0:
@@ -129,7 +129,7 @@ for i in str:
     else:
         pass    
 print("Letters: ",l) 
-print("Digits: ",count)   '''
+print("Digits: ",count)   
 
 # program 15
 import re
