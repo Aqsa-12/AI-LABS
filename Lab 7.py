@@ -1,4 +1,4 @@
-# Iterative Deepening DFS implementation
+
 
 graph = {
     'A': ['B', 'F', 'D', 'E'],
@@ -34,7 +34,6 @@ def IDDFS(start, goal, max_depth):
             return True
     return False
 
-# Test Iterative Deepening
 start, goal = 'A', 'G'
 max_depth = 5
 found = IDDFS(start, goal, max_depth)
@@ -58,7 +57,6 @@ def depth_limited_search(start, goal, depth, graph, path):
     return False
 
 
-# Iterative Deepening DFS (IDDFS)
 def iddfs(start, goal, max_depth, graph):
     for depth in range(max_depth + 1):
         path = []
@@ -71,7 +69,6 @@ def iddfs(start, goal, max_depth, graph):
     return False
 
 
-# --- Tree from your image ---
 tree = {
     'A': ['B', 'F', 'D', 'E'],
     'B': ['K', 'J'],
@@ -89,9 +86,9 @@ tree = {
     'L': []
 }
 
-# --- Run IDDFS ---
 start_node = 'A'
 goal_node = 'G'
 max_depth = 5
 
 iddfs(start_node, goal_node, max_depth, tree)
+
