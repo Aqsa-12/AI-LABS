@@ -38,12 +38,7 @@ class Graph:
         return None, float("inf")
     
 
-# -------------------------------
-# Example graph (Romania Map snippet)
-# -------------------------------
 graph = Graph()
-
-# Define edges (like from Arad example)
 graph.add_edge("Arad", "Sibiu", 140)
 graph.add_edge("Arad", "Timisoara", 118)
 graph.add_edge("Arad", "Zerind", 75)
@@ -53,7 +48,6 @@ graph.add_edge("Fagaras", "Bucharest", 211)
 graph.add_edge("Rimnicu", "Pitesti", 97)
 graph.add_edge("Pitesti", "Bucharest", 101)
 
-# Straight-line heuristics to Bucharest
 heuristics = {
     "Arad": 366,
     "Sibiu": 253,
@@ -72,3 +66,4 @@ path, cost = graph.a_star("Arad", "Bucharest")
 
 print("Best path:", path)
 print("Total cost:", cost)
+
